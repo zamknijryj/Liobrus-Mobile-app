@@ -3,6 +3,7 @@
     package="com.example.zamknijryjx.liobrus">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -11,21 +12,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+            <activity android:name=".Activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".Activities.MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".UserDetailActivity" />
-        <activity android:name=".UserActivity"></activity>
+        <!--<activity android:name=".UserDetailActivity" />-->
+        <activity android:name=".Activities.UserActivity" />
+        <activity android:name=".Activities.SprawdzianActivity" />
+        <activity android:name=".Activities.RegisterActivity" />
+        <activity android:name=".Activities.AktualizacjaActivity"></activity>
     </application>
 
 </manifest>

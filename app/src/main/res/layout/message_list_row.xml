@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/cardGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/sprTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="@font/ubuntu"
+                android:padding="8dp"
+                android:text="Sprawdzian"
+                android:textAlignment="center"
+                android:textColor="@color/cardGrey"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/przedmiot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/opis"
+                android:layout_below="@+id/sprTitle"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Przedmiot"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/opis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/przedmiot"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/przdmiotInfo"
+                android:fontFamily="@font/ubuntu"
+                android:paddingRight="8dp"
+                android:text="Opis"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/opis"
+                android:layout_below="@+id/opis"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/ubuntu"
+                android:paddingBottom="10dp"
+                android:text="Data"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/przdmiotInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/przedmiot"
+                android:layout_alignBottom="@+id/przedmiot"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="11dp"
+                android:text="przedmiot:" />
+
+            <TextView
+                android:id="@+id/opisInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/opis"
+                android:layout_alignBottom="@+id/opis"
+                android:layout_alignStart="@+id/przdmiotInfo"
+                android:text="opis" />
+
+            <TextView
+                android:id="@+id/dataInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/data"
+                android:layout_alignBottom="@+id/data"
+                android:layout_alignStart="@+id/opisInfo"
+                android:text="data" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

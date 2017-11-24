@@ -7,4 +7,10 @@
 
     <color name="hintColor">#fff</color>
     <color name="editTextColor">#fff</color>
+    <color name="toolbar">#932A2A</color>
+    <color name="black">#000</color>
+    <color name="srednia">#E91E63</color>
+    <color name="cardGrey">#E0E0E0</color>
+    <color name="bg">#212227</color>
+    <color name="nice_wthie">#FCFAF9</color>
 </resources>
